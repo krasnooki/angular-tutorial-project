@@ -1,0 +1,7 @@
+<h2>Product Details</h2>
+<div *ngIf="product" style="width:100%;">
+  <h3 class="prodName">{{ product.name }}</h3>
+  <h4>{{ product.price | currency }}</h4>
+  <p>{{ product.description }}</p>
+  <a [title]="'Back <- ' + product.name" [routerLink]="'/'">Back</a>
+</div>
