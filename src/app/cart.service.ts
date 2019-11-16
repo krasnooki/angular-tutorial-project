@@ -23,6 +23,5 @@ export class CartService {
 
   getShippingPrices() {
     return this.http.get('/assets/shipping.json');
-    //return this.http.get('https://swapi.co/api/planets/3/');
   }
 }
