@@ -1,8 +1,7 @@
 <h2>Products</h2>
 <div *ngFor="let product of products; index as productId">
   <h4>
-    <!--a [title]="product.name + ' details'" [routerLink]="['/products', productId]"-->
-    <a [title]="product.name + ' details'" [routerLink]="['/products', product.id]">
+    <a [title]="product.name + ' details'" [routerLink]="['/products', productId]">
       <i class="material-icons">accessible_forward</i>
       {{ product.name }}
     </a>
